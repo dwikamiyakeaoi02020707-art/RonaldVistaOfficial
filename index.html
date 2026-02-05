@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronald Vista - Ronald Kurumi Official</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink: #ff246d;
+            --dark-red: #8b0000;
+            --bg: #000000;
+            --text-light: #ffffff;
+            --accent: #ffb7c5;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+                        url('https://i.pinimg.com/736x/aa/da/f2/aadaf2d2806e35bee40f6cea7e73ece9.jpg'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 5px solid var(--pink);
+        }
+
+        .hero h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 4.5rem;
+            color: var(--pink);
+            margin: 0;
+            text-shadow: 3px 3px 15px rgba(255, 36, 109, 0.8);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 5px solid var(--pink);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--pink);
+            display: inline-block;
+            margin-bottom: 25px;
+            color: var(--pink);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--pink);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover { background: var(--dark-red); transform: scale(1.05); }
+
+        .note-box {
+            font-size: 0.9rem;
+            color: var(--accent);
+            background: rgba(139, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .device-list { font-size: 0.9rem; color: #ccc; }
+        .device-list strong { color: var(--pink); }
+
+        .player-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--pink);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #555;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="player"></div>
+
+    <div class="player-container" onclick="toggleMusic()">
+        <span id="music-text" style="font-size: 11px; font-weight: bold;">Play Date A Live ♫</span>
+        <div id="play-icon" style="background:white; color:var(--pink); border-radius:50%; width:25px; height:25px; display:flex; align-items:center; justify-content:center;">▶</div>
+    </div>
+
+    <section class="hero">
+        <h1 id="glitch-title">Ronald Vista</h1>
+        <p><span style="background: var(--dark-red); padding: 5px 15px; border-radius: 5px; font-weight: bold;">Ronald Kurumi 🔪</span></p>
+        <p style="font-style: italic; margin-top: 20px;">"Ara ara... Selamat datang di markas ISO Ronald Vista."</p>
+    </section>
+
+    <div class="container">
+        
+        <h2>Project ISO</h2>
+        
+        <div class="card">
+            <h3>Micro XP (37MB / 50MB)</h3>
+            <p>Windows XP terkecil di dunia. Memasuki rekor dunia dengan 99,9% full glitch dan error!</p>
+            <div class="note-box">
+                <strong>Instruksi:</strong> Tekan <strong>ESC</strong> di layar setup biru. Abaikan error "apphelper.dll".
+            </div>
+            <a href="https://mega.nz/file/H1sVGDTY#Ubk1HTJzDGrqBlw_R-CFGS3LitlkN7TZLEMkrWtffy0" target="_blank" class="btn">Download 37MB</a>
+            <a href="https://mega.nz/file/ywFV3A4C#DY3LT8KlUaWgKCi2I5ELtcgUZdE8TSOP6CS-uwatc1s" target="_blank" class="btn">Download 50MB</a>
+        </div>
+
+        <div class="card">
+            <h3>Windows XP Ramdontol (99.7 MB)</h3>
+            <p>Windows XP lucu-lucuan khas Ronald Kurumi.</p>
+            <a href="https://mega.nz/file/ntECDbAT#qNW3CphoHOUCjL6nqqmyjsHIVxJmFoIewyb95nWgZ-4" target="_blank" class="btn">Download Ramdontol</a>
+        </div>
+
+        <h2>Info Device Legendaris</h2>
+        <div class="card device-list">
+            <p><strong>List Smartphone:</strong></p>
+            <ul>
+                <li>Coming soon HP utama terbaru (Setelah Lebaran)</li>
+                <li>Samsung Galaxy J2 Prime</li>
+                <li>Xiaomi Redmi 8</li>
+                <li>Samsung Tab 2 GT-P3100</li>
+                <li>Evercoss A5C</li>
+                <li>Evercoss A33E (Rusak)</li>
+            </ul>
+            <hr style="border: 0.5px solid #222;">
+            <p><strong>Laptop Toshiba Satellite M50 (2005 - Sekarang):</strong></p>
+            <ul>
+                <li>CPU: Intel Pentium M (PAE) | RAM: 1GB | GPU: ATI RADEON XPRESS 200M</li>
+                <li>OS: Windows XP SP3 / Tiny Core Linux</li>
+            </ul>
+            <p><strong>Laptop ASUS X550Z (2015 - Matot):</strong></p>
+            <ul>
+                <li>CPU: AMD FX-2600 | RAM: 4GB | GPU: Radeon R5 & R7 | SSD: 500GB</li>
+                <li>OS: Windows 10 LTSB 2016</li>
+            </ul>
+        </div>
+
+        <h2>KOMUNITAS & MEDSOS</h2>
+        <div class="links-grid">
+            <div class="card">
+                <h4>KNS (Kurumi Ngobrol Santai)</h4>
+                <p>Grup WhatsApp Ronald Vista & Ronald Kurumi.</p>
+                <a href="https://chat.whatsapp.com/Kvt2ShCXYA7DzhoZv3GyLg" class="btn">Join WhatsApp</a>
+            </div>
+            <div class="card">
+                <h4>TetoYapping</h4>
+                <p>Community partner base camp Teto OS.</p>
+                <a href="https://www.facebook.com/profile.php?id=100072126193941" class="btn">Facebook</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h4>Official Ronald Vista</h4>
+            <div class="links-grid">
+                <a href="https://www.facebook.com/profile.php?id=100072700493500" class="btn">FB Profile</a>
+                <a href="https://www.youtube.com/@ronaldkurumi_" class="btn">YouTube Channel</a>
+                <a href="https://www.youtube.com/watch?v=YsXQ8J-K0cU&t=2529s" class="btn">Lortlimbah review MicroXP</a>
+            </div>
+        </div>
+
+        <div class="card" style="border-left-color: #fff;">
+            <h4>Gaming Info</h4>
+            <p><strong>ID PJSK:</strong> 682464240065388544</p>
+            <p><strong>ID Lost Saga:</strong> ronald45556 / ronald456</p>
+            <p><strong>ID FF:</strong> 11971321700</p>
+            <p style="color:var(--pink); font-weight:bold; text-align:center;">Road to 10.000 Subs!</p>
+        </div>
+
+    </div>
+
+    <footer>
+        Web Created by: <strong>Kishishako Magi / Holymagi</strong><br>
+        Ronald Vista &copy; 2026 - Road to 10.000 Subscribers
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        let player;
+        let isPlaying = false;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '0', width: '0', videoId: '6GW0wXMt2CQ',
+                playerVars: { 'autoplay': 0, 'loop': 1, 'playlist': '6GW0wXMt2CQ' }
+            });
+        }
+        function toggleMusic() {
+            const icon = document.getElementById('play-icon');
+            if (!isPlaying) { player.playVideo(); icon.innerText = "⏸"; } 
+            else { player.pauseVideo(); icon.innerText = "▶"; }
+            isPlaying = !isPlaying;
+        }
+        const names = ["Ronald Vista", "Ronald Kurumi", "Sensei~!"];
+        setInterval(() => {
+            document.getElementById('glitch-title').innerText = names[Math.floor(Math.random() * names.length)];
+        }, 3000);
+    </script>
+</body>
+</html>
